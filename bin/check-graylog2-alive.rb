@@ -76,7 +76,7 @@ class CheckGraylog2Alive < Sensu::Plugin::Check::CLI
 
   def vhost_alive?
     host     = config[:host]
-    port     = config[:port]
+    port     = config[:port] || 12900
     username = config[:username]
     password = config[:password]
 
